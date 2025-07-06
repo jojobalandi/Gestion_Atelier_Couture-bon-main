@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Huninn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+:root{
+    --primary-color: #0b63c8;
+    --white-color: #ffffff;
+    --white-back:#b8b8b8;
+    --black-color: #000000;
+    --Rgb-primary-color:rgb(24, 85, 241);
+    --Rgb-primary-color-flou:rgb(115, 149, 236);
+    --for-list:#2A2A2A;
+}
+
+body{
+    display: flex;
+}
+h4{
+    font-family: "Huninn", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+}
+
+p{
+    font-family: "Huninn", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.ContentLeft{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: var(--primary-color);
+    height: 100vh;
+
+}
+
+.FromDesignConnexion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.vector-header{
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.FromDesignConnexion img{
+    border-radius: 24px;
+    width: 467px;
+    height: 334px;
+}
+
+.textOfDesignConnexion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white-color);
+    width: 500px;
+}
+
+.vector-footer{
+    position: relative;
+    width: 300px;
+    height: 20px;
+}
+
+.vector-footer img{
+    position: absolute;
+    left: 50px;
+    top: -10px;
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+.vector-footer img:nth-child(2){
+    top: -10px;    /* décalage vertical */
+    left: 70px;   /* décalage horizontal */
+    width: 80%;   /* taille plus petite */
+    height: auto;
+    z-index: 2;
+    opacity: 0.9;
+}
+
+.textOfDesignConnexion h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    font-weight: 600 ;
+}
+
+.ContentRight{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.FormConnexion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.Section-forgot-password{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-top: 15px;
+}
+
+.email-container{
+    position: relative;
+    max-width: 400px;
+}
+
+.connexion-button-final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: "Huninn", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.connexion-button-final a button{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-family: "Huninn", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    border-radius: 12px;
+    width: 540px;
+    height: 45px;
+    border: none;
+}
+
+.email-container input {
+width: 100%;
+padding: 10px 40px 10px 10px;
+background-color: #ffffff;
+/* color: white; */
+border: 1px solid #555;
+border-radius: 8px;
+font-size: 14px;
+outline: none;
+}
+
+.email-container .toggle-email {
+position: absolute;
+top: 50%;
+right: 10px;
+transform: translateY(-50%);
+background: none;
+border: none;
+color: #999;
+cursor: pointer;
+font-size: 16px;
+}
+
+label {
+color: #666;
+font-size: 14px;
+display: block;
+margin-bottom: 5px;
+font-family: "Huninn", sans-serif;
+font-weight: 800;
+font-style: normal;
+display: flex;
+}
+
+.password{
+    margin-top: 12px;
+}
+
+.password-container {
+position: relative;
+max-width: 400px;
+}
+
+.password-container input {
+width: 100%;
+padding: 10px 40px 10px 10px;
+background-color: #ffffff;
+/* color: white; */
+border: 1px solid #555;
+border-radius: 8px;
+font-size: 14px;
+outline: none;
+}
+
+.password-container .toggle-password {
+position: absolute;
+top: 50%;
+right: 10px;
+transform: translateY(-50%);
+background: none;
+border: none;
+color: #999;
+cursor: pointer;
+font-size: 16px;
+}
+
+.logoConexion{
+    width: 167px;
+    height: 48px;
+}
+
+.logoConexion img{
+    width: 167px;
+    height: 48px;
+}
+
+
+.FormOfConexion{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.forGoogleConnexion{
+    display: flex;
+    text-decoration: none;
+}
+
+.forGoogleConnexion button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+    gap: 12px;
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    width: 540px;
+    height: 45px;
+}
+
+.separatorLogin{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.separatorLogin span{
+    background-color: var(--primary-color);
+    width: 254px;
+    height: 2px;
+}

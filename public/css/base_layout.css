@@ -1,0 +1,111 @@
+/* Reset simple */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: #2f3e46;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+}
+
+.sidebar .logo img {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.menu {
+    flex-grow: 1;
+}
+
+.menu a {
+    display: block;
+    padding: 12px 15px;
+    color: #adb5bd;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+    background-color: #52796f;
+    color: #fff;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #52796f;
+}
+
+.profile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info .name {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.profile-info .role {
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 30px;
+    min-height: 100vh;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    .menu {
+        display: flex;
+        gap: 15px;
+        flex-grow: 0;
+    }
+    .menu a {
+        margin-bottom: 0;
+        padding: 10px;
+    }
+    .profile {
+        padding-top: 0;
+        border-top: none;
+        margin-left: auto;
+    }
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}

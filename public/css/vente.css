@@ -1,0 +1,19 @@
+h2 { margin-bottom: 1rem; color:#333; }
+
+.add-btn {
+    display:inline-block; margin-bottom:1rem; padding:8px 14px;
+    background:#3498db; color:#fff; border-radius:6px; text-decoration:none;
+}
+
+table {
+    width:100%; border-collapse:collapse; background:#fff; box-shadow:0 0 8px rgba(0,0,0,.05);
+}
+th, td { padding:10px 12px; border-bottom:1px solid #eee; text-align:left; }
+th { background:#f0f4f8; }
+tr:hover { background:#fafafa; }
+
+form { max-width:400px; }
+form label { display:block; margin-top:1rem; }
+form input, form select { width:100%; padding:8px; border:1px solid #ccc; border-radius:6px; }
+button { margin-top:1rem; width:100%; padding:10px; background:#2ecc71; color:#fff; border:none; border-radius:6px; }
+.error-message { color:#c00; margin:1rem 0; }

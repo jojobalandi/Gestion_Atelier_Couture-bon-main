@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ContentRight {
+    width: 400px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.FormConnexion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoConexion img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.FormOfConexion h4 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.NormalConnexion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.NormalConnexion label {
+    font-weight: bold;
+    color: #555;
+}
+
+.NormalConnexion input[type="text"],
+.NormalConnexion input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.email-container,
+.password-container {
+    position: relative;
+}
+
+.form-text.text-danger {
+    color: red;
+    font-size: 0.85em;
+}
+
+.connexion-button-final {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.connexion-button-final button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.connexion-button-final button:hover {
+    background-color: #2c3e9f;
+}
